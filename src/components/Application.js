@@ -5,7 +5,7 @@ import { useState } from "react";
 import Appointment from "components/Appointment"
 import axios from 'axios';
 import { useEffect } from 'react';
-
+import { getAppointmentsForDay } from "helpers/selectors";
 
 export default function Application(props) {
 
@@ -17,7 +17,7 @@ export default function Application(props) {
 
   const setDay = day => setState({ ...state, day });
   // const setDays = days => setState(prev => ({ ...prev, days }));
-  const dailyAppointments =[];
+  const dailyAppointments = getAppointmentsForDay(state, state.day)
 
 
   useEffect(() => {
