@@ -5,7 +5,7 @@ import { useState } from "react";
 import Appointment from "components/Appointment"
 import axios from 'axios';
 import { useEffect } from 'react';
-import { getAppointmentsForDay, getInterview } from "helpers/selectors";
+import { getAppointmentsForDay, getInterview, getInterviewersForDay } from "helpers/selectors";
 
 export default function Application(props) {
 
@@ -16,8 +16,10 @@ export default function Application(props) {
     interviewers: {}
   });
 
+  //parsing data for appointments
   const setDay = day => setState({ ...state, day });
   const dailyAppointments = getAppointmentsForDay(state, state.day)
+  const dailyInterviewers = getInterviewersForDay(state, state.day)
 
 
   useEffect(() => {
@@ -58,7 +60,7 @@ export default function Application(props) {
           <Appointment
             key={appointment.id}
             {...appointment}
-            // interview={interview}
+            interviewers={dailyInterviewers}
           />
         ))}
         <Appointment id="last" time="5pm" />
