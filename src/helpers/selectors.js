@@ -27,12 +27,13 @@ export const getInterview = (state, interview) => {
 
   // extract student and interviewer properties from interview object
   // interviewer ID comes from interviewer
-  const { student, interviewer } = interview;
-  const interviewerId = interviewer;
+  // const { student, interviewer } = interview;
+  // const interviewerId = interviewer;
+  let interviewerId = interview.interviewer
 
   return {
-    student,
-    interviewer: state.interviewers[interviewerId]
+    student: interview.student,
+    interviewer: {...state.interviewers[interviewerId]}
   };
 };
 
