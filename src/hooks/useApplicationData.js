@@ -14,8 +14,7 @@ export default function useApplicationData() {
 
   //parsing data for appointments
   const setDay = day => setState({ ...state, day });
-  const dailyAppointments = getAppointmentsForDay(state, state.day);
-  const dailyInterviewers = getInterviewersForDay(state, state.day);
+
 
   //add pointments
   function bookInterview(id, interview) {
@@ -29,11 +28,6 @@ export default function useApplicationData() {
       ...state.appointments,
       [id]: appointment
     };
-
-    // setState({
-    //   ...state,
-    //   appointments
-    // });
 
     //PUT request
     return axios
