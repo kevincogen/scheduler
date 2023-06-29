@@ -39,12 +39,12 @@ npm run storybook
 ## Project Views 
 
 ### Daily View
-(public/images/Screenshot 2023-06-29 at 2.17.47 PM.png)
+![Daily Schedule](public/images/Screenshot 2023-06-29 at 2.17.47 PM.png)
 
 ### Add/Edit Appointment View 
-(public/images/Screenshot 2023-06-29 at 2.18.25 PM.png)
+![Add/Edit form](public/images/Screenshot 2023-06-29 at 2.18.25 PM.png)
 ### Delete Appointment View
-(public/images/Screenshot 2023-06-29 at 2.18.46 PM.png)
+![Delete confirmation](public/images/Screenshot 2023-06-29 at 2.18.46 PM.png)
 
 ### Input Validation View
-(public/images/Screenshot 2023-06-29 at 2.19.12 PM.png)
+![Ensure data is entered](public/images/Screenshot 2023-06-29 at 2.19.12 PM.png)
