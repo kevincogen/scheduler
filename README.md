@@ -39,12 +39,12 @@ npm run storybook
 ## Project Views 
 
 ### Daily View
-![Daily Schedule](public/images/Screenshot 2023-06-29 at 2.17.47 PM.png)
+![Daily Schedule](https://github.com/kevincogen/scheduler/blob/6b969f5235b7e8d3d6a2132755def713db32a1ca/public/images/Screenshot%202023-06-29%20at%202.17.47%20PM.png?raw=true)
 
 ### Add/Edit Appointment View 
-![Add/Edit form](public/images/Screenshot 2023-06-29 at 2.18.25 PM.png)
+![Add/Edit form](https://github.com/kevincogen/scheduler/blob/master/public/images/Screenshot%202023-06-29%20at%202.18.25%20PM.png?raw=true)
 ### Delete Appointment View
-![Delete confirmation](public/images/Screenshot 2023-06-29 at 2.18.46 PM.png)
+![Delete confirmation](https://github.com/kevincogen/scheduler/blob/master/public/images/Screenshot%202023-06-29%20at%202.18.46%20PM.png)
 
 ### Input Validation View
-![Ensure data is entered](public/images/Screenshot 2023-06-29 at 2.19.12 PM.png)
+![Ensure data is entered](https://github.com/kevincogen/scheduler/blob/master/public/images/Screenshot%202023-06-29%20at%202.19.12%20PM.png?raw=true)
