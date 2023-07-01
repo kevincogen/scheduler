@@ -1,8 +1,5 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { getAppointmentsForDay } from "helpers/selectors";
-import { getInterviewersForDay } from "helpers/selectors";
-import { getInterview } from "helpers/selectors";
 
 export default function useApplicationData() {
   const [state, setState] = useState({
@@ -62,8 +59,6 @@ export default function useApplicationData() {
         });
       });
   }
-
-  
   useEffect(() => {
     Promise.all([
       axios.get("/api/days"),
@@ -73,7 +68,6 @@ export default function useApplicationData() {
       setState(prev => ({ ...prev, days: all[0].data, appointments: all[1].data, interviewers: all[2].data }));
     });
   }, []);
-
   // Updates remaining spots in days
   useEffect(() => {
     axios.get("/api/days")
